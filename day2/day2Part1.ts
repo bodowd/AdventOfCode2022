@@ -42,9 +42,6 @@ const getOutcome = (
   opponentShapeTranslated: string | undefined,
   yourShapeTranslated: string | undefined
 ): Outcome => {
-  //console.log(opponentShapeTranslated);
-  //console.log(yourShapeTranslated);
-
   switch (opponentShapeTranslated) {
     case "rock":
       switch (yourShapeTranslated) {
@@ -98,8 +95,6 @@ const getScore = (inputFile: string) => {
   for (const round of lines) {
     const opponentShape = round[0];
     const yourShape = round[2];
-    // console.log(opponentShape);
-    // console.log(yourShape);
     const opponentShapeTranslated = playedMap[opponentShape];
 
     const yourShapeTranslated = playedMap[yourShape];
